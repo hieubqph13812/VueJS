@@ -12,31 +12,13 @@
     <div id="app">
         <!--Template Syntax-->
         <h1>{{ message }}</h1>
+        <h3>{{ say('Bùi Quang Hiếu')}}</h3>
     </div>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <script>
-        var appVue = new Vue({
-            el: '#app',
-            data: {
-                message: 'Bùi Quang Hiếu'
-            }
-        });
-        console.log(appVue.message);
-
-        setMessage = function() {
-
-            appVue.message == 'Bùi Quang Hiếu' ? appVue.message = 'Hà Phương Thùy' : appVue.message = 'Bùi Quang Hiếu';
-
-            setTimeout(() => {
-                // appVue.message = 'Hà Phương Thùy'
-                setMessage();
-            }, 2000);
-        };
-        setMessage();
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
